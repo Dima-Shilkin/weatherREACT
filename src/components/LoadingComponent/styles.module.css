@@ -1,0 +1,38 @@
+.loadingConteiner {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  flex-direction: column;
+  z-index: 5;
+  background: linear-gradient(to bottom, #add8e6, #fffacd);
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.loadingConteiner__img {
+  width: 200px;
+  animation: logo 10s linear infinite;
+}
+
+.loadingConteiner__title {
+  color: #533d3d;
+  font-size: 33px;
+  font-weight: 800;
+}
+
+@keyframes logo {
+  from {
+    transform: rotate(0 deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
