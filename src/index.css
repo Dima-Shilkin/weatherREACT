@@ -23,4 +23,5 @@ body {
   font-family: "Nunito", sans-serif;
   margin: 0 auto;
   background: linear-gradient(to bottom, #add8e6, #fffacd);
+  height: 100vh;
 }

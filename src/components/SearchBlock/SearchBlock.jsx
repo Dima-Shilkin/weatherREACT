@@ -12,8 +12,15 @@ export default function SearchBlock({ onSearch }) {
     }
   };
 
+  const handleButtonClick = () => {
+    if (inputRef.current) {
+      onSearch(inputRef.current.value);
+      inputRef.current.value = "";
+    }
+  };
+
   return (
-    <>
+    <div className={styles.div}>
       <input
         ref={inputRef}
         onKeyDown={handleKeyDown}
@@ -21,7 +28,9 @@ export default function SearchBlock({ onSearch }) {
         placeholder="Введите город"
         type="text"
       />
-      <button onClick={handleKeyDown}>+</button>
-    </>
+      <button className={styles.search} onClick={handleButtonClick}>
+        <img src="/images/search.png" alt="" />
+      </button>
+    </div>
   );
 }

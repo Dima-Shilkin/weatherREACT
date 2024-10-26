@@ -29,7 +29,7 @@ export default function Card({ weather }) {
             <img
               className={styles.card__footer_img}
               src="/images/temperature.png"
-              alt=""
+              alt="Иконка температуры"
             />
             <span className={styles.param__temp}>
               {weather.main.temp.toFixed(0)} ℃
@@ -39,7 +39,7 @@ export default function Card({ weather }) {
             <img
               className={styles.card__footer_img}
               src="/images/wind.png"
-              alt=""
+              alt="Иконка ветра"
             />
             <span className={styles.param__temp}>{weather.wind.speed} м/с</span>
           </div>
@@ -47,7 +47,7 @@ export default function Card({ weather }) {
             <img
               className={styles.card__footer_img}
               src="/images/humidity.png"
-              alt=""
+              alt="Иконка влажности"
             />
             <span className={styles.param__temp}>
               {weather.main.humidity} %
