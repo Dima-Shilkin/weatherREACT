@@ -23,9 +23,11 @@ export default function Card({ weather }) {
               </span>
             </div>
           </div>
+        </div>
+        <div className={styles.card__footer}>
           <div className={styles.card__head_right}>
             <img
-              className={styles.card__head_right_temperature}
+              className={styles.card__footer_img}
               src="/images/temperature.png"
               alt=""
             />
@@ -33,25 +35,21 @@ export default function Card({ weather }) {
               {weather.main.temp.toFixed(0)} ℃
             </span>
           </div>
-        </div>
-        <div className={styles.card__footer}>
           <div className={styles.card__footer_left}>
             <img
-              className={styles.card__footer_left_img}
+              className={styles.card__footer_img}
               src="/images/wind.png"
               alt=""
             />
-            <span className={styles.card__param_text_footer_left}>
-              {weather.wind.speed} м/с
-            </span>
+            <span className={styles.param__temp}>{weather.wind.speed} м/с</span>
           </div>
           <div className={styles.card__footer_right}>
             <img
-              className={styles.card__footer_right_img}
+              className={styles.card__footer_img}
               src="/images/humidity.png"
               alt=""
             />
-            <span className={styles.card__param_text_footer_right}>
+            <span className={styles.param__temp}>
               {weather.main.humidity} %
             </span>
           </div>
