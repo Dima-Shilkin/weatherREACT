@@ -2,7 +2,7 @@ import styles from "./styles.module.css";
 import { useState } from "react";
 import { useEffect } from "react";
 
-export default function LoadingComponent() {
+export default function StartComponent() {
   const [isVisible, setIsVisible] = useState(true);
   const [isDelete, setIsDelete] = useState(false); //это я делаю для плавного удаления
 

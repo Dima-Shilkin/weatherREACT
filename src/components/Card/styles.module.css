@@ -1,0 +1,107 @@
+.card {
+  width: 560px;
+  height: 170px;
+  background-color: white;
+  border-radius: 28px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+
+.card__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card__head_left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card__head_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__head_right_temperature {
+  width: 34px;
+  height: 34px;
+}
+
+.param__temp {
+  font-size: 28px;
+}
+
+.card__icon {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__title {
+  font-size: 28px;
+  margin: 0;
+  max-width: 280px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card__desc {
+  position: absolute;
+  display: block;
+  opacity: 0.6;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.card__footer_left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__footer_left_img {
+  width: 26px;
+  height: 26px;
+}
+
+.card__param_text_footer_left {
+  font-size: 24px;
+}
+
+.card__footer_right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card__footer_right_img {
+  width: 26px;
+  height: 26px;
+}
+
+.card__param_text_footer_right {
+  font-size: 24px;
+}
