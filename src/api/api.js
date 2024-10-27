@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// const key = import.meta.env.VITE_KEY_API;
+const key = import.meta.env.VITE_KEY_API;
 
 //для поиска по названию
 async function getWeatherData(location) {

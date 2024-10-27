@@ -4,6 +4,7 @@
   border-radius: 28px;
   margin: 0 auto;
   margin-bottom: 20px;
+  max-width: 800px;
 }
 
 .card__inner {

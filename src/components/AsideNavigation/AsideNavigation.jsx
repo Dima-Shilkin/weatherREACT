@@ -3,10 +3,14 @@ import styles from "./styles.module.css";
 
 export default function AsideNavigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [menuImage, setMenuImage] = useState("/images/menu.png"); //для смены изображения
 
-  // Функция для переключения состояния при клике
   const toggleSidebar = () => {
-    setIsOpen((prev) => !prev);
+    setIsOpen((prev) => {
+      const newIsOpen = !prev;
+      setMenuImage(newIsOpen ? "/images/close.png" : "/images/menu.png");
+      return newIsOpen;
+    });
   };
 
   return (
@@ -24,7 +28,7 @@ export default function AsideNavigation() {
           </li>
 
           <li onClick={toggleSidebar} className={styles.li}>
-            <img className={styles.img} src="/images/menu.png" alt="" />
+            <img className={styles.img} src={menuImage} alt="" />
             <span className={styles.span}>Меню</span>
           </li>
 
