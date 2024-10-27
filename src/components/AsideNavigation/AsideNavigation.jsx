@@ -28,28 +28,28 @@ export default function AsideNavigation() {
           </li>
 
           <li onClick={toggleSidebar} className={styles.li}>
-            <img className={styles.img} src={menuImage} alt="" />
+            <img src={menuImage} alt="" />
             <span className={styles.span}>Меню</span>
           </li>
 
           <li className={styles.li}>
-            <img className={styles.img} src="/images/searchMenu.png" alt="" />
+            <img src="/images/searchMenu.png" alt="" />
             <span>Поиск</span>
           </li>
 
           <li className={styles.li}>
-            <img className={styles.img} src="/images/history.png" alt="" />
+            <img src="/images/history.png" alt="" />
             <span className={styles.span}>История поисков</span>
           </li>
 
           <li className={styles.li}>
-            <img className={styles.img} src="/images/location.png" alt="" />
+            <img src="/images/location.png" alt="" />
 
             <span className={styles.span}>Моя геолокация</span>
           </li>
 
           <li className={styles.li}>
-            <img className={styles.img} src="/images/support.png" alt="" />
+            <img src="/images/support.png" alt="" />
             <span className={styles.span}>Обратная связь</span>
           </li>
         </ul>
