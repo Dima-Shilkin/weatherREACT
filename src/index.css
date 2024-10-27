@@ -25,3 +25,9 @@ body {
   background: linear-gradient(to bottom, #add8e6, #fffacd);
   height: 100vh;
 }
+
+@media (hover: none) {
+  * {
+    cursor: default;
+  }
+}
