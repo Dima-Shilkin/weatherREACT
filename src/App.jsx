@@ -8,6 +8,7 @@ import { getWeatherData, getWeatherByCoords } from "./api/api";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading/Loading";
 import IncorrectData from "./components/IncorrectData/IncorrectData";
+import AsideNavigation from "./components/AsideNavigation/AsideNavigation";
 
 function App() {
   const [weather, setWeather] = useState([]);
@@ -46,6 +47,7 @@ function App() {
   return (
     <>
       <StartComponent />
+      <AsideNavigation />
       <Header />
       <Main>
         <SearchBlock onSearch={handleSearch} />
